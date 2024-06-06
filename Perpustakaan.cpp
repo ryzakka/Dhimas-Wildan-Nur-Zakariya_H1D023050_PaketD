@@ -88,10 +88,7 @@ void printPrimeBookIDs() {
 //Fungsi untuk menemukan buku berdasarkan ID
 address cariBuku(int id) {
     address p = first;
-    while (p != NULL) {
-        if (p->data == id) {
-            return p;}
-        p = p->next;}
+    while (p != NULL) {}
     return NULL;
 }
 
@@ -102,10 +99,8 @@ void hapusBuku(int id) {
     while (p != NULL) {
         if (p->data == id) {
             if (p == first) {
-                deletefirst();}
-            else if (p == last) {
-                deletelast(); } 
-            else{
+                deletefirst();} else if (p == last) {
+                deletelast(); } else{
                 p->prev->next = p->next;
                 p->next->prev = p->prev;
                 delete p;}
