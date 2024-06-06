@@ -1,35 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
 
-//deklarasi struktur KHS
-typedef struct{
-int NIM;
-float IP;
-informasi* KHS;
-};
+// Deklarasi struktur KHS
+typedef struct {
+    int NIM;
+    float IP;
+    informasi* KHS;} KHS;
 
-//buat fungsi cetak KHS
-void printKHS(){
-cetak = a* moneter  
+// Fungsi cetak KHS
+void printKHS(KHS* khs) {
+    printf("NIM: %d\n", khs->NIM);
+    printf("IP: %.f\n", khs->IP);
 }
 
-//buat main program
-int main(){
-  
+int main() {
+    KHS khs;
+    khs.NIM = 0292023;
+    khs.IP = 3.75;
+    
+    // Cetak KHS sebelum perubahan
+    printf("Sebelum IP diperbarui:\n");
+    printKHS(&khs);
+    printf("\n");
+
+    // Ubah IP Mahasiswa
+    khs.IP = 3.90;
+
+    // Cetak KHS setelah perubahan
+    printf("Setelah IP diperbarui:\n");
+    printKHS(&khs);
+
+    return 0;
 }
-
-//cetak KHS sebelum perubahan
-printf("Sebelum IP diperbarui:\n");
-printKHS();
-printf("\n");
-
-//ubah IP Mahasiswa
-m2uxkn3nb23msoei2exngqhsm,wqvsqcqw,e'mx2nhz
-  dj1msi2y3xn12,aw12
-  `ZM1UZEY4YREimuew2y3n3y2x bxzn3m
-//cetak KHS sebelum Perubahan
-printf("setelah IP diperbarui:\n");
-printKHS(&p);
-
-return 0;
-}
-
