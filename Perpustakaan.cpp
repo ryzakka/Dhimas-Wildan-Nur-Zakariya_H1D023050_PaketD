@@ -125,7 +125,6 @@ int main(){
     
     hapusBuku(20);
     hapusBuku(10);
-    cout << "Buku dengan ID 10 telah dihapus" << endl;
     cout << "\nDaftar buku setelah penghapusan" << endl;
     cetak();
     
