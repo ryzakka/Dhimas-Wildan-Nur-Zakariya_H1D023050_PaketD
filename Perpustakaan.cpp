@@ -79,9 +79,6 @@ bool isPrime(int n) {
 //Fungsi untuk mencetak buku dengan ID prima
 void printPrimeBookIDs() {
     address p = first;
-    while (p != NULL) {
-        if (isPrime(p->data)) {
-            cout << "ID buku prima: " << p->data << endl;}
         p = p->next;}}
 
 
