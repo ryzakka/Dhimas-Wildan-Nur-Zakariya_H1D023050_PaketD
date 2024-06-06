@@ -71,9 +71,7 @@ bool isPrime(int n) {
     }
     for (int i = 2; i * i <= n; ++i) {
         if (n % i == 0) {
-            return false;
-        }
-    }
+            return false;}}
     return true;
 }
 
@@ -83,11 +81,8 @@ void printPrimeBookIDs() {
     address p = first;
     while (p != NULL) {
         if (isPrime(p->data)) {
-            cout << "ID buku prima: " << p->data << endl;
-        }
-        p = p->next;
-    }
-}
+            cout << "ID buku prima: " << p->data << endl;}
+        p = p->next;}}
 
 
 //Fungsi untuk menemukan buku berdasarkan ID
@@ -95,10 +90,8 @@ address cariBuku(int id) {
     address p = first;
     while (p != NULL) {
         if (p->data == id) {
-            return p;
-        }
-        p = p->next;
-    }
+            return p;}
+        p = p->next;}
     return NULL;
 }
 
@@ -109,18 +102,15 @@ void hapusBuku(int id) {
     while (p != NULL) {
         if (p->data == id) {
             if (p == first) {
-                deletefirst();
-            } else if (p == last) {
-                deletelast();
-            } else {
+                deletefirst();}
+            else if (p == last) {
+                deletelast(); } 
+            else{
                 p->prev->next = p->next;
                 p->next->prev = p->prev;
-                delete p;
-            }
-            return;
-        }
-        p = p->next;
-    }
+                delete p;}
+            return;}
+        p = p->next;}
     cout << "Buku dengan ID " << id << " tidak ditemukan." << endl;
 }
 
